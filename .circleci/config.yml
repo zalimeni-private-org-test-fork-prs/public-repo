@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: -|
+          command: |-
             if [ -n "$TEST_SECRET" ]; then echo "found secret!"; else echo "secret not found"; fi
 
 # Invoke jobs via workflows
