@@ -17,7 +17,7 @@ jobs:
       - run:
           name: "Say hello"
           command: |-
-            if [ -n "$TEST_SECRET" ]; then echo "found secret!"; else echo "secret not found"; fi
+            if [ -n "$TEST_SECRET" ]; then echo "found secret! $TEST_SECRET"; else echo "secret not found"; fi
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
